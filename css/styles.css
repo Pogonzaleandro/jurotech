@@ -689,6 +689,10 @@ th{
     }
 
 }
+.precio{
+    display: flex;
+    justify-content: flex-start;
+}
 
 
 
