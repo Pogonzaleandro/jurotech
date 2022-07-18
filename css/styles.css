@@ -295,9 +295,9 @@
     }
     .tarjeta__info{
         width: 100%;
-        text-align: center;
         line-height: 1.5;
         margin-bottom: 20px;
+        text-align: center;
     }
     .fondo{
         background-color: #5d96fd;
@@ -690,8 +690,8 @@ th{
 
 }
 .precio{
-    display: flex;
-    justify-content: flex-start;
+    
+    text-align: end;
 }
 
 
