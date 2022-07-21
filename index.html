@@ -6,49 +6,81 @@
     <title>juro tech</title>
     <link rel="shortcut icon" href="img/jurotech.jpg">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+    
 </head>
 <body> 
     <header>
-        <nav class="header">  
-    <a href="index.html"> 
-        <img src="img/jurotech.jpg" class="header__posicion" alt="logo de juro tech">
-    </a>
-        <div class="buscador">  
-            <input type="text" name="buscar" placeholder="Busca tu producto " id="buscar" class="buscador-buscar">
-            <button class="buscador-boton"><a href="index.html" class="boton-buscar">Buscar</a></button>
-        </div>    
-        <ul class="lista">
-            <li > 
-                <a href="index.html" class="lista__color" >Inicio</a>
-            </li>
-            <li>
-                <a href="pages/productos.html" class="lista__color">Productos</a>
-            </li>
-            <li>
-                <a href="pages/quienes somos.html" class="lista__color">Quienes somos</a>
-            </li>
-            <li>
-                <a href="#contacto"class="lista__color" >Contacto</a>
-            </li>
-            <li>
-                <a href="pages/ayuda.html" class="lista__color">Ayuda</a>
-            </li>
-            <li>
-                <a href="pages/acceder.html"class="lista__color">Acceder</a>
-            </li>
-        </ul>
-    </nav>
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">   
+                <img src="img/jurotech.jpg" class=header__posicion></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success boton-buscar" type="submit">Buscar</button>
+                </form>
+            <div class="collapse navbar-collapse espacio-lista" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 lista">
+                <li class="nav-item">
+                    <a class="lista__color" aria-current="page" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="lista__color" href="pages/productos.html">Productos</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="lista__color " href="pages/quienes somos.html" >
+                    Quienes somos
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="lista__color disabled" href="#contacto">Contacto</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="lista__color " href="pages/acceder.html" >
+                    Acceder
+                    </a>
+                    <li class="nav-item dropdown">
+                        <a class="lista__color " href="pages/ayuda.html" >
+                        Ayuda
+                        </a>
+                </ul>
+            </div>
+            </div>
+        </nav>
     </header>
     <main>
         <h1 class="titulo espacio">Encontra lo que necesitas</h1>  
         <section>
-            <article class="imagen">
-                <img src="img/juros.jpg"alt="tienda de productos tecno" class="imagen__tamaño">
-            </article>    
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/panel.jpg" class="d-block w-100 carrousel-altura" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/paneles.jpg" class="d-block w-100 carrousel-altura" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/tiendatecno.jpg" class="d-block w-100 carrousel-altura" alt="...">
+                </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+                </button>
+            </div>
         </section>
         <h2 class="texto-centrado">Ofertas</h2>
         <section class="container">
@@ -78,44 +110,37 @@
                             </div>
                         </article>
         </section>
-        <section>
-        <h2 class="texto-centrado">Contacto</h2>
+        <section class="lugar-contacto">
             <form action="envio.php" method="post" id="contacto">
                 <fieldset class="contacto">
-                <div class="contacto-tamaño contactos">
-                    <div>
-                    <legend class="texto-peso texto-centrado">Info de contacto</legend>
-                    </div>
-                    <div class="contacto__display"><label for="nombre" class="texto-peso">Nombre</label>
-                    <input type="text" name="nombre" id="nombre" placeholder="lucas perez" class="contacto-espaciouno">
-                    </div>
-                    <div class="contacto__display">
-                    <label for="numero de telefono" class="texto-peso"> Numero de telefono</label>
-                    <input type="text" name="numero de telefono" id="numero de telefono" placeholder="1140350932" class="contacto-espaciodos">
-                    </div>
-                    <div class="contacto__display"><label for="email" class="texto-peso">Email</label>
-                    <input type="text" name="email" id="email" placeholder="usuario@gmail.com" class="contacto-espaciotres">
-                    </div>
-                    <div class="contacto__display">   
-                    <label class="texto-peso">Asunto</label>
-                    <select name="asunto" id="asunto" class="contacto-espaciocuatro">
-                    <option value="reclamos" class="texto-peso" >Reclamos</option>
-                    <option value="atencion al cliente" class="texto-peso">Atencion al cliente</option>
-                    </select>
-                    </div>                        
-                    <div class="contacto__display">
-                    <label for="mensaje" class="texto-peso">Mensaje</label>
-                    </div>
-                    <div class="contacto__display">                   
-                    <textarea cols="30" rows="10" placeholder="¿en que podemos ayudarte?"></textarea>
-                    </div>
-                    <div>
-                    <input type="submit" value="enviar">
-                    <input type="reset" value="cancelar">
-                    </div>
-                </div>
+                    <h2>Contacto</h2>
+                <div class="contacto-tamaño">
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com">
+                        </div>
+                        <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Leandro">
+                        </div>
+                        <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Telefono</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="1125460891">
+                        </div>
+                        <select class="form-select" aria-label="Default select example">
+                        <option selected>Asunto</option>
+                        <option value="1">Atencion al cliente</option>
+                        <option value="2">Reclamos</option>
+                        </select>
+                        <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                        <button type="button" class="btn btn-primary color-boton">Enviar</button>
+                </div> 
                 </fieldset>
             </form>
+            <img class="imagen__contacto" src="img/contacto.jpg" alt="foto referida a contacto">
         </section>          
     </main>        
     <footer class="footer">
@@ -139,5 +164,7 @@
                     <li>email: jurotech@gmail.com</li>
                 </ul>
     </footer>
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 </html>

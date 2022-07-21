@@ -8,6 +8,7 @@
     display: flex;
     justify-content:space-around;
     align-items: center;
+    align-content: center;
     background-color: #5d96fd;
     flex-wrap: wrap;
     }
@@ -58,11 +59,16 @@
     }
     .boton-buscar{
         text-decoration: none;
-        color: azure;
+        color:black;
+        background-color: #ffffff;
     }
     .imagen__tamaño{
         width: 400px;
         height: 400px;
+    }
+    .imagen-posicion{
+        display: flex;
+        height: 100px;
     }
     .texto-centrado{
         text-align: center;
@@ -110,13 +116,14 @@
     flex-wrap: wrap;
     }
     .contacto-tamaño{
-        min-width: 250px;
+        min-width: 350px;
         border: solid ;
         border-color: #ffffff;
         background-color: #ffffff;
         border-radius: 5px ;
         box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
         display: flex;
+        padding: 30px;
         flex-direction: column;
         flex-wrap: wrap;
     }
@@ -128,7 +135,7 @@
         align-items: center;
     }
     .espacio{
-        background-color: #ffffff;
+        margin-bottom: 20px;
     }
     .imagen__tamaño
     {
@@ -142,6 +149,19 @@
         display: flex;
         flex-wrap: wrap;
     } 
+    .lugar-contacto{
+        margin-top: 70px;
+        display: flex;
+        justify-content:space-around;
+        align-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .imagen__contacto{
+        width: 50%;
+        height: 480px;
+
+    }
     .contacto{
         min-width: 200px;
         display: flex;
@@ -252,7 +272,7 @@
     .preguntas{
         text-align: center;
         width: auto;
-        height: 700px;
+        height: 500px;
     }
     .preguntas-diseño{
         width:auto;
@@ -277,7 +297,7 @@
         flex-wrap: wrap;
     }
     .tarjeta{
-        width:300px;
+        width:250px;
         height: auto;
         background-color:#f3f3f3;
         display: flex;
@@ -310,8 +330,7 @@
     }
     .productos-grid{
         display: grid;
-        grid-template-areas:"img1 img2 img3 img4"
-         ; 
+        grid-template-areas:"img1 img2 img3 img4"; 
                             grid-template-columns: repeat(4,1fr);
                             grid-template-rows: 1fr  ; 
                             width: 90vw;
@@ -377,7 +396,26 @@
         height: 400px;
         margin: 0px;
     }
-    
+    .espacio-lista{
+        margin-left: 60px;
+    }
+    .espacio-ayuda{
+        margin-bottom: 50px;
+        margin-top: 70px;
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+    .carrousel-altura{
+        height: 500px;
+    }
+    .color-boton{
+        background-color: #5d96fd;
+        font-size: auto;
+        color:black;
+    }
+    .preguntas-lugar{
+        margin: 0px;
+    }
 /*selectores de etiquetas*/
 html{
     font-size: 62,5%;
@@ -420,16 +458,17 @@ form fieldset
 }
 
 
-nav ul li a {
+nav div ul li a {
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: white;
     margin: 0rem;
     padding: 20px;
     
 }
 
-nav ul li a:hover 
+
+nav div ul li a:hover 
 {
     font-weight:600px ;
     color: black;
@@ -596,6 +635,16 @@ th{
         background-color: #ffffff; 
         border-radius: 10px;
         text-align: center;
+    }
+    .imagen__contacto{
+        width: 0%;
+        height: 0px;
+    }
+    .espacio-ayuda{
+        margin-bottom: 50px;
+        margin-top: 70px;
+        margin-left: 0px;
+        margin-right: 0px;
     }
 }
  
