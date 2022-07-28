@@ -1,0 +1,26 @@
+{
+  "name": "leandropogonza-desafioo4",
+  "version": "1.0.0",
+  "description": "<h1>tienda juro tech-proyecto coderhouse</h1>\r <p>este sitio  es para una tienda pensada para el curso de desarrollo web</p>\r <h2>tecnologias usadas </h2>\r <ul>\r <li>html5</li>\r <li>css3</li>\r <li>bootstrap</li>\r <li>SASS</li>\r </ul>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/estilos.scss css/styles.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pogonzaleandro/jurotech.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pogonzaleandro/jurotech/issues"
+  },
+  "homepage": "https://github.com/Pogonzaleandro/jurotech#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.19"
+  }
+}
