@@ -1,0 +1,10 @@
+.titulos-pagina{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 40px;
+}
+@mixin display-flex($display,$flex-direction,$justify){
+    display:$display ;
+    flex-direction: $flex-direction;
+    justify-content: $justify;
+}

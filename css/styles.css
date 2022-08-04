@@ -1,4 +1,9 @@
 @charset "UTF-8";
+.titulos-pagina, h3, h4 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 40px; }
+
 * {
   margin: 0;
   padding: 0; }
@@ -70,9 +75,9 @@ footer ul li {
   background-color: #5d96fd;
   margin-top: 100px;
   display: flex;
-  flex-wrap: wrap;
   flex-direction: row-reverse;
   justify-content: space-around;
+  flex-wrap: wrap;
   align-items: center;
   text-decoration: none; }
   .footer__tamañoimg {
@@ -116,6 +121,7 @@ footer ul li {
 .lugar-contacto {
   margin-top: 70px;
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
   align-content: center;
   align-items: center;
@@ -123,10 +129,10 @@ footer ul li {
   .lugar-contacto .contacto {
     min-width: 200px;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    justify-content: center; }
+    flex-wrap: wrap; }
   .lugar-contacto .contacto-tamaño {
     min-width: 350px;
     border: solid;
@@ -292,16 +298,6 @@ body {
   background-color: #f3f3f3;
   margin: 0; }
 
-h3 {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-  font-size: 40px; }
-
-h4 {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-  font-size: 40px; }
-
 tr, td {
   background-color: #ffffff;
   height: 100px;
@@ -350,14 +346,19 @@ th {
     flex-wrap: wrap;
     height: 500px;
     margin-bottom: 150px; }
+  .carrousel-altura {
+    height: 500px;
+    object-fit: scale-down; }
   .contenedor {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     height: 500px;
-    margin-bottom: 150px; }
+    margin-bottom: 200px;
+    padding: 50px;
+    margin: auto; }
   .formulario {
-    margin: 50px;
+    margin: auto;
     width: 400px;
     margin-bottom: 150px;
     height: 600px;
@@ -427,7 +428,8 @@ th {
     margin-bottom: 50px;
     margin-top: 70px;
     margin-left: 0px;
-    margin-right: 0px; }
+    margin-right: 0px;
+    padding: 20px; }
   .footer {
     background-color: #5d96fd;
     margin-top: 100px;

@@ -1,4 +1,6 @@
+@import "operators";
 @import"variables";
+
 
 
 *{
@@ -96,10 +98,8 @@ footer ul li {
     .footer{
         background-color: $color-principal;
         margin-top: 100px;
-        display: flex;
+        @include display-flex (flex, row-reverse, space-around);
         flex-wrap: wrap;
-        flex-direction:row-reverse;
-        justify-content: space-around;
         align-items: center;
         text-decoration: none;
     
@@ -132,9 +132,7 @@ footer ul li {
     }
 }
 .historia{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    @include display-flex (flex, row, center);
     align-items: flex-start;
     align-content: flex-start;
     width: auto;
@@ -155,19 +153,16 @@ footer ul li {
 }
 .lugar-contacto{
     margin-top: 70px;
-    display: flex;
-    justify-content:space-around;
+    @include display-flex (flex, row, space-around);
     align-content: center;
     align-items: center;
     flex-wrap: wrap;
 
 .contacto{
     min-width: 200px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+    @include display-flex (flex,column, center);
     align-items: center;
-    justify-content: center;     
+    flex-wrap: wrap;    
 }
     .contacto-tamaño{
         min-width: 350px;
@@ -326,10 +321,12 @@ footer ul li {
     
     .carrousel-altura{
         height: 500px;
+       
     }
     .preguntas-lugar{
         margin: 0px;
     }
+    
 /*selectores de etiquetas*/
 html{
     font-size: 62,5%;
@@ -380,15 +377,11 @@ body{
 
 
 h3{
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    font-size: 40px;
+   @extend .titulos-pagina;
 }
 
 h4{
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    font-size: 40px;
+    @extend .titulos-pagina;
 }
 
 tr, td{
@@ -449,15 +442,21 @@ th{
     
 
     }
+    .carrousel-altura{
+        height: 500px;
+        object-fit:scale-down;
+    }
     .contenedor{
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
         height: 500px;
-        margin-bottom: 150px;
+        margin-bottom: 200px;
+        padding: 50px;
+        margin:auto;
     }
     .formulario{
-        margin:50px;
+        margin:auto;
         width:400px;
         margin-bottom: 150px;
         height: 600px;
@@ -540,6 +539,7 @@ th{
         margin-top: 70px;
         margin-left: 0px;
         margin-right: 0px;
+        padding: 20px;
     }
     .footer{
         background-color:$color-principal;
