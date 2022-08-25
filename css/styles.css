@@ -164,6 +164,7 @@ footer ul li {
   margin-left: 500px;
   margin-right: 500px;
   width: 400px;
+  margin-bottom: 300px;
   height: 400px;
   background-color: #ffffff;
   border-radius: 10px; }
@@ -232,6 +233,7 @@ footer ul li {
     flex-direction: column;
     align-items: center;
     margin: auto;
+    margin-bottom: 20px;
     border: 1px solid #d3d3d3;
     border-radius: 5px;
     gap: 10px;
@@ -251,25 +253,6 @@ footer ul li {
     margin-bottom: 20px;
     text-align: center;
     color: white; }
-
-.productos-grid {
-  display: grid;
-  grid-template-columns: 0.1fr 0.1fr 0.1fr 0.1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 35px;
-  margin: 0px;
-  padding: 30px;
-  justify-content: center; }
-  .productos-grid .img {
-    width: auto;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column-reverse;
-    padding: 5px;
-    border-radius: 5px;
-    background-color: #d3d3d3; }
-    .productos-grid .img:hover {
-      transform: scale(1.2, 1.2); }
 
 .carrousel-altura {
   height: 400px; }
@@ -367,6 +350,14 @@ th {
 
 /* Media de celular*/
 @media (min-width: 320px) and (max-width: 575px) {
+  .formulario {
+    margin-left: 500px;
+    margin-right: 500px;
+    width: 400px;
+    height: 400px;
+    margin-bottom: 500px;
+    background-color: #ffffff;
+    border-radius: 10px; }
   .tarjeta {
     width: auto;
     height: auto;
@@ -472,8 +463,9 @@ th {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    height: 500px;
-    margin-bottom: 150px; }
+    height: 400px;
+    margin-bottom: 150px;
+    margin: 600px; }
   .carrousel-altura {
     height: 500px;
     object-fit: scale-down; }
@@ -560,7 +552,7 @@ th {
     padding: 20px; }
   .footer {
     background-color: #5d96fd;
-    margin-top: 100px;
+    margin-top: 200px;
     display: flex;
     flex-direction: column-reverse;
     justify-content: space-around;
@@ -578,20 +570,11 @@ th {
     padding: 0px; } }
 
 /*media de tablet*/
-@media (min-width: 576px) and (max-width: 992px) {
+@media (min-width: 575px) and (max-width: 992px) {
   .preguntas {
     text-align: center;
     width: auto;
     height: 660px; }
-  .productos-grid {
-    display: grid;
-    grid-template-areas: "img1 img2" "img3 img4";
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    width: 100vw;
-    height: 100vh;
-    margin-bottom: 150px;
-    gap: 5px; }
   .contenedor {
     display: flex;
     justify-content: center;
@@ -660,4 +643,12 @@ th {
     margin: 50px; }
   .lista__color {
     margin: 40px;
-    padding: 0px; } }
+    padding: 0px; }
+  .historia {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+    width: auto;
+    height: 600px; } }

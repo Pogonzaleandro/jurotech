@@ -206,6 +206,7 @@ footer ul li {
         margin-left:500px;
         margin-right:500px;
         width:400px;
+        margin-bottom: 300px;
         height: 400px;
         background-color: #ffffff;
         border-radius: 10px;
@@ -290,6 +291,7 @@ footer ul li {
         flex-direction: column;
         align-items: center;
         margin: auto;
+        margin-bottom: 20px;
         border: 1px solid #d3d3d3;
         border-radius: 5px;
         gap: 10px;
@@ -316,30 +318,10 @@ footer ul li {
         color: white;
     }
 }
-    .productos-grid{
-        display: grid;
-                            grid-template-columns: 0.1fr 0.1fr 0.1fr 0.1fr;
-                            grid-template-rows: 1fr 1fr;
-                            gap: 35px;
-                            margin: 0px;
-                            padding: 30px;
-                            justify-content:center;
-    
-    .img{
-        width:auto;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column-reverse;  
-        padding: 5px;
-        border-radius: 5px;
-        background-color: #d3d3d3;
-    
-    &:hover{
-        transform:scale(1.2,1.2);
-    }
-}
 
-}
+
+
+
     
     .carrousel-altura{
         height: 400px;
@@ -468,6 +450,16 @@ th{
 }
 /* Media de celular*/
 @media (min-width:320px) and (max-width:575px){
+    .formulario{
+        margin-left:500px;
+        margin-right:500px;
+        width:400px;
+        height: 400px;
+        margin-bottom: 500px;
+        background-color: #ffffff;
+        border-radius: 10px;
+    }
+   
     .tarjeta{
         width:auto;
         height: auto;
@@ -502,6 +494,7 @@ th{
         background-color: $color-principal;
         width: 30%;
         text-align: center;
+
         display: flex;
         justify-content: center;
         flex-direction: column;
@@ -588,9 +581,9 @@ th{
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        height: 500px;
+        height: 400px;
         margin-bottom: 150px;
-    
+        margin: 600px;    
 
     }
     .carrousel-altura{
@@ -694,7 +687,7 @@ th{
     }
     .footer{
         background-color:$color-principal;
-        margin-top: 100px;
+        margin-top: 200px;
         display: flex;
         flex-direction:column-reverse;
         justify-content: space-around;
@@ -718,24 +711,14 @@ th{
 
 /*media de tablet*/
 
-@media (min-width: 576px) and (max-width: 992px){
+@media (min-width: 575px) and (max-width: 992px){
     .preguntas{
         text-align: center;
         width: auto;
         height: 660px;
     }
 
-    .productos-grid{
-        display: grid;
-        grid-template-areas:"img1 img2"
-                            "img3 img4" ; 
-                            grid-template-columns: 1fr 1fr ;
-                            grid-template-rows: 1fr 1fr  ; 
-                            width: 100vw;
-                            height: 100vh;
-                            margin-bottom: 150px;
-                            gap: 5px;
-                        }
+    
                         .contenedor{
                             display: flex;
                             justify-content: center;
@@ -823,5 +806,12 @@ th{
 .lista__color {
     margin: 40px;
     padding: 0px;
+}
+.historia{
+    @include display-flex (flex, row, center);
+    align-items: flex-start;
+    align-content: flex-start;
+    width: auto;
+    height: 600px;
 }
 }
